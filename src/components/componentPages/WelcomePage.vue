@@ -123,7 +123,7 @@ export default {
 }
 @media screen and (max-width: 576px) {
     .parent-container {
-        grid-template-columns: 80%;
+        grid-template-columns: 95%;
     }
 }
 @media screen and (max-width: 390px) {
