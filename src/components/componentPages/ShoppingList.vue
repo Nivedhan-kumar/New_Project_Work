@@ -276,6 +276,9 @@ export default {
     .product-parent-container {
         grid-template-columns: 30% 30% 30%;
     }
+    .shop-btn-container {
+        width: 97%;
+    }
 }
 @media screen and (max-width:768px) {
     .product-parent-container {
@@ -284,7 +287,14 @@ export default {
 }
 @media screen and (max-width:576px) {
     .product-parent-container {
-        grid-template-columns: 70%;
+        grid-template-columns: 100%;
+    }
+    .header-btn{
+        display: flex ;
+        flex-direction: column;
+    }
+    .btn-container{
+        margin-bottom: 12px;
     }
 }
 </style>
