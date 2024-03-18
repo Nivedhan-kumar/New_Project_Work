@@ -5,7 +5,7 @@
                 <h2 class="selected-product-name">Men Checkered Round Neck Cotton Blend Black T-Shirt</h2>
                 <div class="imageList-container">
                     <div class="image-style-container">
-                        <div v-for="items of imageList" :key="items.id">
+                        <div v-for="items of imageList" :key="items.id" class="inner-image-container">
                             <img :src="items.img" class="half-img" />
                         </div>
                     </div>
@@ -80,9 +80,17 @@ export default {
     display: flex;
     padding: 20px 35px;
 }
+.inner-image-container{
+    display: flex;
+    align-items: center;
+}
+.image-style-container{
+    margin-right: 8px;
+}
 .half-img {
     width: 100%;
     height: auto;
+    margin: 5px;
 }
 .full-img {
     height: auto;
@@ -105,15 +113,13 @@ export default {
         display: flex;
     }
 }
-@media screen and (max-width: 992px) {
-    /* .product-spec{
-        padding: 0;
-    } */
-}
 @media screen and (max-width: 700px) {
     .product-container {
         display: grid;
         grid-template-columns: 100%;
+    }
+    .product-spec{
+        margin: 0;
     }
 }
 @media screen and (max-width: 576px) {
